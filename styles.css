@@ -31,10 +31,10 @@ body.dark {
 .slider {
   position: absolute;
   cursor: pointer;
-  top: 0;
+  top: -80;
   left: 0;
   right: 0;
-  bottom: 0;
+  bottom: 80;
   background-color: #ccc;
   -webkit-transition: .4s;
   transition: .4s;
@@ -74,5 +74,13 @@ input:checked + .slider:before {
   border-radius: 50%;
 }
 
+.darkmodetext {
+  margin: 0;
+  display: inline-block;
+  position: absolute;
+  top: -80;
+  left: 70;
+
+}
 
 
