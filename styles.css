@@ -98,6 +98,8 @@ input:checked + .slider:before {
   color: #032326;
   border: none;
   transition: background-color .3s, border .3s;
+  position:relative;
+  top: -40;
 }
 
 .buttons:hover {
