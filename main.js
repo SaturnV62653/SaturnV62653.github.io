@@ -2,8 +2,8 @@ function switchTheme() {
     const body = document.body;
 
     if (body.classList.contains('dark')) {
-        body.classList.add('dark');
+        body.classList.remove('dark');
     } else {
-        body.classList.remove');
+        body.classList.add('dark');
     }
 }

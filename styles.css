@@ -6,11 +6,13 @@ body {
     font-size: 20px;
     color: black;
     background: white;
+    transition: background 0.4s;
 }
 
 body.dark {
    color: white;
-   background: #032326
+   background: #032326;
+   transition: background 0.4s;
 }
 
 /* css for darkmode switch */
