@@ -4,15 +4,15 @@
 body {
     font-family: 'JetBrains Mono';
     font-size: 20px;
-    font-color: black;
+    color: black;
     background: white;
 }
 
-/*body.dark {
+body.dark {
    color: white;
    background: #032326
 }
-*/
+
 /* css for darkmode switch */
 .switch {
   position: relative;
@@ -73,8 +73,5 @@ input:checked + .slider:before {
   border-radius: 50%;
 }
 
-input:checked {
-    background: #032326;
-    color: white;
-}
+
 
