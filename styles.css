@@ -1,4 +1,4 @@
-/*import fonts*/
+    /*import fonts*/
 @import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap');
 
 body {
@@ -19,8 +19,8 @@ body.dark {
 .switch {
   position: relative;
   display: inline-block;
-  top: -75px;
-  left: 700px;
+  top: -8%;
+  left: 4%;
   width: 60px;
   height: 34px;
   z-index: 1000;
@@ -88,9 +88,9 @@ input:checked + .slider:before {
 .darkmodetext {
   margin: 0;
   display: inline-block;
-  position: absolute;
-  top: 36;
-  left: 780;
+  position: relative;
+  top: -8.55%;
+  left: 20%;
   white-space: nowrap;
   overflow: hidden;
 }
@@ -109,9 +109,9 @@ input:checked + .slider:before {
   color: #032326;
   border: none;
   transition: background-color .3s, border .3s;
-  position:relative;
-  top: -145;
-  left: 600;
+  position: relative;
+  top: -135;
+  left: 34%;
   z-index: 1000;
 }
 
@@ -191,5 +191,5 @@ nav {
 
 h1 {
   position: relative;
-  top: -10px;
+  top: 0.3%;
 }
