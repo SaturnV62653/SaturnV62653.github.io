@@ -15,26 +15,35 @@ body.dark {
    transition: background .5s, color .5s;
 }
 /* css for darkmode switch */
+/* The switch - the box around the slider */
 .switch {
   position: relative;
   display: inline-block;
+  top: -75px;
+  left: 700px;
+  width: 60px;
+  height: 34px;
+  z-index: 1000;
+}
+
+/* Hide default HTML checkbox */
+.switch input {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  opacity: 0;
   width: 60px;
   height: 34px;
 }
 
-.switch input {
-  opacity: 0;
-  width: 0;
-  height: 0;
-}
-
+/* The slider */
 .slider {
   position: absolute;
   cursor: pointer;
-  top: -80;
+  top: 0;
   left: 0;
   right: 0;
-  bottom: 80;
+  bottom: 0;
   background-color: #ccc;
   -webkit-transition: .4s;
   transition: .4s;
@@ -54,6 +63,7 @@ body.dark {
 
 input:checked + .slider {
   background-color: #2196F3;
+
 }
 
 input:focus + .slider {
@@ -66,6 +76,7 @@ input:checked + .slider:before {
   transform: translateX(26px);
 }
 
+/* Rounded sliders */
 .slider.round {
   border-radius: 34px;
 }
@@ -78,8 +89,8 @@ input:checked + .slider:before {
   margin: 0;
   display: inline-block;
   position: absolute;
-  top: -76;
-  left: 70;
+  top: 36;
+  left: 780;
   white-space: nowrap;
   overflow: hidden;
 }
