@@ -19,7 +19,7 @@ body.dark {
 .switch {
   position: relative;
   display: inline-block;
-  top: -8%;
+  top: -6vh;
   left: 4%;
   width: 60px;
   height: 34px;
@@ -89,8 +89,8 @@ input:checked + .slider:before {
   margin: 0;
   display: inline-block;
   position: relative;
-  top: -8.55%;
-  left: 20%;
+  top: -6.4vh;
+  left: 32vh;
   white-space: nowrap;
   overflow: hidden;
 }
@@ -144,18 +144,18 @@ nav {
   background-color: white;
   border-radius: 25px;
   position: absolute;
-  top: 50%;
+  top: 3.60vh;
   left: 50%;
   transform: translate(-50%, -50%);
   transition: transform .6s, opacity .8s, top .6s;
 }
 
 .bar-top {
-  top: 25%;
+  top: 2vh;
 }
 
 .bar-bottom {
-  top: 75%;
+  top: 5.2vh;
 }
 
 .hamburger-menu.active .bar-top {
@@ -191,5 +191,5 @@ nav {
 
 h1 {
   position: relative;
-  top: 0.3%;
+  top: 0.3%vh;
 }
