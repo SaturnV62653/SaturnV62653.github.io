@@ -112,7 +112,7 @@ input:checked + .slider:before {
   position: relative;
   top: -135;
   left: 34%;
-  z-index: 1000;
+  z-index: 10000;
 }
 
 .buttons:hover {
@@ -172,7 +172,7 @@ nav {
 
 .hamburger-menu.active .bar-mid {
   opacity: 0;
-  z-index; 1002;
+  z-index: 1002;
 }
 
 .hamburger-menu.active .bar-bottom {
