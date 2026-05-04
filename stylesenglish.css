@@ -1,0 +1,172 @@
+   /*import fonts*/
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap');
+
+/* css for darkmode switch */
+body {
+    font-family: 'JetBrains Mono';
+    font-size: 1.1vw;
+    color: black;
+    background: white;
+    transition: background .5s, .5s;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+body.dark {
+   color: white;
+   background: #032326; 
+   transition: background .5s, color .5s;
+}
+/* css for hamburger menu */
+nav {
+  padding: 1rem;
+  position: absolute;
+  bottom:px;
+}
+
+.hamburger-menu {
+  height: 50px;
+  width: 50px;
+  position: absolute;
+  cursor: pointer;
+  padding: 1rem;
+}
+
+
+.ham-bar {
+  width: 70%;
+  height: 4px;
+  background-color: white;
+  border-radius: 25px;
+  position: absolute;
+  top: -64vh;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  transition: transform .6s, opacity .8s, top .6s;
+}
+
+.bar-top {
+  top: -61.5vh;
+}
+
+.bar-bottom {
+  top: -59vh;
+}
+
+.hamburger-menu.active .bar-top {
+  transform: translate(-50%, -50%) rotate(-315deg);
+  top: -62vh;
+}
+
+.hamburger-menu.active .bar-mid {
+  opacity: 0;
+}
+
+.hamburger-menu.active .bar-bottom {
+  transform: translate(-50%, -50%) rotate(-225deg);
+  top: -62vh;
+}
+
+.off-screen-menu {
+  position:fixed;
+  top: 0;
+  left: -80%;
+  background-color: #032326;
+  border:3px solid #2196F3;
+  border-top: none;
+  height: 100vh;
+  width: 75vw;
+  transition: left .5s;
+
+}
+
+.off-screen-menu.active {
+  left: -60%;
+}
+/* css for dark mode button/text */
+switch {
+  position: absolute;
+  display: inline-block;
+  top: -6vh;
+  left: 4%;
+  width: 60px;
+  height: 34px;
+
+}
+
+
+.switch input {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  opacity: 0;
+  width: 60px;
+  height: 34px;
+}
+
+.slider {
+  position: absolute;
+  width: 60px;
+  height: 34px;
+  cursor: pointer;
+  top: 5.2vh;
+  left: 40vw;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+input:checked + .slider {
+  background-color: #2196F3;
+
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px #2196F3;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px);
+}
+
+
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
+
+.darkmodetext {
+  margin: 0;
+  position: absolute;
+  white-space: nowrap;
+  overflow: hidden;
+  top: 6vh;
+  left: 29vw;
+}
+
+.rounded {
+  border: 3px solid;
+  border-radius: 5px;
+  position: absolute;
+  top: -50;
+}
