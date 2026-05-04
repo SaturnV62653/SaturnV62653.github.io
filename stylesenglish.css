@@ -22,7 +22,7 @@ body.dark {
 nav {
   padding: 1rem;
   position: absolute;
-  bottom:px;
+  bottom:210px;
 }
 
 .hamburger-menu {
@@ -37,7 +37,7 @@ nav {
 .ham-bar {
   width: 70%;
   height: 4px;
-  background-color: white;
+  background-color: grey;
   border-radius: 25px;
   position: absolute;
   top: -64vh;
@@ -45,6 +45,7 @@ nav {
   transform: translate(-50%, -50%);
   transition: transform .6s, opacity .8s, top .6s;
 }
+
 
 .bar-top {
   top: -61.5vh;
@@ -169,4 +170,8 @@ input:checked + .slider:before {
   border-radius: 5px;
   position: absolute;
   top: -50;
+}
+
+.paragraph1 {
+
 }
