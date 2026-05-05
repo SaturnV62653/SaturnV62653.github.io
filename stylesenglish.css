@@ -1,6 +1,5 @@
    /*import fonts*/
-@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&family=MedievalSharp&family=Roboto+Slab:wght@100..900&display=swap');
 /* css for darkmode switch */
 body {
     font-family: 'JetBrains Mono';
@@ -81,16 +80,29 @@ input:checked + .slider:before {
 #textcontainer1 {
 display: flex;
   width: 100%;        
-  height: 100vh;
-  justify-content: center;
-  align-items: flex-start;
+  height: 50vh;
+  flex-direction: column;
   padding-top: 4rem;
 }
 
 #paragraph1 {
-  width: 80%;
+  font-family: 'Roboto Slab';
+  font-size: large;
+  justify-content: center;
+  align-items: flex-start;
   text-align: center;
+  order: 1;
 }
+
+#paragraph2 {
+  font-family: 'Roboto Slab';
+  font-size: large;
+  justify-content: center;
+  align-items: flex-start;
+  text-align: center;
+  order: 4;
+}
+
 
 /*topbar css*/
 #topbar {
@@ -100,7 +112,7 @@ display: flex;
   align-items: center;
   width: 100%;
   box-sizing: border-box;
-  background-color: rgb(209, 192, 192);
+  background-color: rgb(235, 225, 225);
   transition: background-color .5s, color .5s;
   position: sticky;   
   top: 0;
@@ -179,7 +191,7 @@ body.dark #topbar {
   margin: 0;
   background: #081f1d;
   transition: left 0.3s ease;
-  z-index: 1000;
+  z-index: 998;
 }
 
 .nav-menu.open {
@@ -248,4 +260,17 @@ body:not(.dark) .overlay {
  position:absolute;
  top: 20vh;
  right: 37.2%;
+}
+
+.image1 {
+  order: 2;
+  max-width: 80%;
+  height: auto;
+  justify-content: inherit;
+
+}
+
+#header1 {
+  order: 3;
+  text-align: center;
 }
