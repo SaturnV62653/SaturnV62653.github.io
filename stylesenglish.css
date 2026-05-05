@@ -3,7 +3,7 @@
 /* css for darkmode switch */
 body {
     font-family: 'JetBrains Mono';
-    font-size: 1.1vw;
+    font-size: calc(12px + 1.5vw);
     color: black;
     background: white;
     transition: background .5s, .5s;
